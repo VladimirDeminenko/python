@@ -1,5 +1,5 @@
 #Create a list called dairy_section with four elements from the dairy section of a supermarket.
-dairy_section = ['Fruits', 'Meat', 'Milk', 'Bread']
+dairy_section = ['Fruits', 'Meat', 'Milk', 'Cheeses']
 
 #Print a string with the first and last elements of the dairy_section list.
 print("1. first: %s; last: %s" % (dairy_section[0], dairy_section[len(dairy_section) - 1]))
@@ -23,4 +23,23 @@ milk_carton["fl_oz"] = 33.33
 milk_carton["Cost"] = (0.79, "Euro")
 milk_carton["brand_name"] = "My favorite farm"
 
+#Print out the values of all of the elements of the milk_carton using the values in the dictionary, and not, for instance, using the data in the milk_expiration tuple.
 print("3. Milk info:\n\texpiration date:\t%d/%d/%d;\n\tfl.oz.:\t\t\t%0.2f;\n\tcost:\t\t\t%0.2f %s\n\tbrand name:\t\t%s" % (milk_carton["expiration_date"][0], milk_carton["expiration_date"][1], milk_carton["expiration_date"][2], milk_carton["fl_oz"], milk_carton["Cost"][0], milk_carton["Cost"][1], milk_carton["brand_name"]))
+
+#Show how to calculate the cost of six cartons of milk based on the cost of milk_carton.
+print("4. The cost of six cartons of milk is %.2f %s" % (6 * milk_carton["Cost"][0], milk_carton["Cost"][1]))
+
+#Create a list called cheeses. List all of the cheeses you can think of. Append this list to the dairy_section list, and look at the contents of dairy_section.
+cheeses = ['Areesh', 'Domiati', 'Karish', 'Mish', 'Roumy cheese']
+dairy_section.append(cheeses)
+print("5. %s" % (dairy_section))
+
+#Then remove the list of cheeses from the array.
+dairy_section.pop(len(dairy_section) - 1)
+print("6. %s" % (dairy_section))
+
+#How do you count the number of cheeses in the cheese list?
+print("7. The number of cheeses: %d" % (len(cheeses)))
+
+#Print out the first five letters of the name of your first cheese.
+print("8. %s" % (cheeses[0][0:5]))
