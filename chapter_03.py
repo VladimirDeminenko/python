@@ -24,13 +24,22 @@ milk_carton["Cost"] = (0.79, "Euro")
 milk_carton["brand_name"] = "My favorite farm"
 
 #Print out the values of all of the elements of the milk_carton using the values in the dictionary, and not, for instance, using the data in the milk_expiration tuple.
-print("3. Milk info:\n\texpiration date:\t%d/%d/%d;\n\tfl.oz.:\t\t\t%0.2f;\n\tcost:\t\t\t%0.2f %s\n\tbrand name:\t\t%s" % (milk_carton["expiration_date"][0], milk_carton["expiration_date"][1], milk_carton["expiration_date"][2], milk_carton["fl_oz"], milk_carton["Cost"][0], milk_carton["Cost"][1], milk_carton["brand_name"]))
+print("3. Milk info:\n" \
+      "\t-- 3.1 --\n"
+      "\texpiration date:\t%d/%d/%d;\n" \
+      "\tfl.oz.:\t\t\t%0.2f;\n" \
+      "\tcost:\t\t\t%0.2f %s;\n" \
+      "\tbrand name:\t\t%s." % ( \
+      milk_carton["expiration_date"][0], milk_carton["expiration_date"][1], milk_carton["expiration_date"][2], \
+      milk_carton["fl_oz"], \
+      milk_carton["Cost"][0], milk_carton["Cost"][1], \
+      milk_carton["brand_name"]))
 
-print("3.1 Milk info:\n" \
-      "%22s\t%d/%d/%d;\n" \
-      "%22s\t%0.2f;\n" \
-      "%22s\t%0.2f %s;\n" \
-      "%22s\t%s" % ( \
+print("\t-- 3.2 --\n" \
+      "%24s\t%d/%d/%d;\n" \
+      "%24s\t%0.2f;\n" \
+      "%24s\t%0.2f %s;\n" \
+      "%24s\t%s." % ( \
       "expiration date:", milk_carton["expiration_date"][0], milk_carton["expiration_date"][1], milk_carton["expiration_date"][2], \
       "fl.oz.:", milk_carton["fl_oz"], \
       "cost:", milk_carton["Cost"][0], milk_carton["Cost"][1], \
