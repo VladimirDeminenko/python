@@ -30,20 +30,20 @@ print("3. Milk info:\n" \
       "\tfl.oz.:\t\t\t%0.2f;\n" \
       "\tcost:\t\t\t%0.2f %s;\n" \
       "\tbrand name:\t\t%s." % ( \
-      milk_carton["expiration_date"][0], milk_carton["expiration_date"][1], milk_carton["expiration_date"][2], \
-      milk_carton["fl_oz"], \
-      milk_carton["Cost"][0], milk_carton["Cost"][1], \
-      milk_carton["brand_name"]))
+          milk_carton["expiration_date"][0], milk_carton["expiration_date"][1], milk_carton["expiration_date"][2], \
+          milk_carton["fl_oz"], \
+          milk_carton["Cost"][0], milk_carton["Cost"][1], \
+          milk_carton["brand_name"]))
 
 print("\t-- 3.2 --\n" \
       "%24s\t%d/%d/%d;\n" \
       "%24s\t%0.2f;\n" \
       "%24s\t%0.2f %s;\n" \
       "%24s\t%s." % ( \
-      "expiration date:", milk_carton["expiration_date"][0], milk_carton["expiration_date"][1], milk_carton["expiration_date"][2], \
-      "fl.oz.:", milk_carton["fl_oz"], \
-      "cost:", milk_carton["Cost"][0], milk_carton["Cost"][1], \
-      "brand name:", milk_carton["brand_name"]))
+          "expiration date:", milk_carton["expiration_date"][0], milk_carton["expiration_date"][1], milk_carton["expiration_date"][2], \
+          "fl.oz.:", milk_carton["fl_oz"], \
+          "cost:", milk_carton["Cost"][0], milk_carton["Cost"][1], \
+          "brand name:", milk_carton["brand_name"]))
 
 #Show how to calculate the cost of six cartons of milk based on the cost of milk_carton.
 print("4. The cost of six cartons of milk is %.2f %s" % (6 * milk_carton["Cost"][0], milk_carton["Cost"][1]))
